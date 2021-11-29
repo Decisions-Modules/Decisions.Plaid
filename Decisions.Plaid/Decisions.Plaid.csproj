@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DecisionsSDK" Version="7.6.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="RestSharp" Version="106.13.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Data\AssetReports" />
+    </ItemGroup>
+
+</Project>
