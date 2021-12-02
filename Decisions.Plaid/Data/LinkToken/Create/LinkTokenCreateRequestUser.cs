@@ -31,8 +31,8 @@ namespace Decisions.Plaid.Data.LinkToken.Create
         /// <br/>
         /// <br/> Example: `2020-01-01T00:00:00Z`
         /// <br/></summary>
-        [Newtonsoft.Json.JsonProperty("phone_number_verified_time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime Phone_number_verified_time { get; set; }
+        [Newtonsoft.Json.JsonProperty("phone_number_verified_time", Required = Newtonsoft.Json.Required.AllowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTime? Phone_number_verified_time { get; set; }
     
         /// <summary>The user's email address. This field is optional, but required to enable the [pre-authenticated returning user flow](https://plaid.com/docs/link/returning-user/#enabling-the-returning-user-experience).</summary>
         [Newtonsoft.Json.JsonProperty("email_address", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -43,8 +43,8 @@ namespace Decisions.Plaid.Data.LinkToken.Create
         /// <br/> Only pass a verification time for an email address that you have verified. If you have performed verification but don’t have the time, you may supply a signal value of the start of the UNIX epoch.
         /// <br/>
         /// <br/> Example: `2020-01-01T00:00:00Z`</summary>
-        [Newtonsoft.Json.JsonProperty("email_address_verified_time", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime Email_address_verified_time { get; set; }
+        [Newtonsoft.Json.JsonProperty("email_address_verified_time", Required = Newtonsoft.Json.Required.AllowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTime? Email_address_verified_time { get; set; }
     
         /// <summary>To be provided in the format "ddd-dd-dddd". This field is optional and will support not-yet-implemented functionality for new products.</summary>
         [Newtonsoft.Json.JsonProperty("ssn", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

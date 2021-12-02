@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Decisions.Plaid.Data.Accounts.Balance;
@@ -5209,12 +5210,13 @@ namespace Decisions.Plaid.Api
             {
                 using (var request = new HttpRequestMessage())
                 {
-                    var content = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value));
+                    var cntnt = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content = new StringContent(cntnt, Encoding.UTF8, "application/json");
                     content.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
                     request.Content = content;
                     request.Method = new HttpMethod("POST");
                     request.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
-    
+                    
                     PrepareRequest(client, request, urlBuilder);
     
                     var url = urlBuilder.ToString();

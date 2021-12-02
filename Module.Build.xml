@@ -10,7 +10,9 @@
     <AgentDlls/>
     <InstallScript/>
     <SqlScripts/>
-    <ObjectsToImport/>
+    <ObjectsToImport>
+      <string>./Decisions.Plaid/ImportedObjects/**/*.*</string>
+    </ObjectsToImport>
     <MsSqlScript/>
   </Resources>
   <Version/>

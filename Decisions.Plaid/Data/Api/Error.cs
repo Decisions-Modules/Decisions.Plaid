@@ -46,11 +46,11 @@ namespace Decisions.Plaid.Data.Api
         public double? Status { get; set; }
     
         /// <summary>The URL of a Plaid documentation page with more information about the error</summary>
-        [Newtonsoft.Json.JsonProperty("documentation_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("documentation_url", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Documentation_url { get; set; }
     
         /// <summary>Suggested steps for resolving the error</summary>
-        [Newtonsoft.Json.JsonProperty("suggested_action", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("suggested_action", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Suggested_action { get; set; }
     
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties = new System.Collections.Generic.Dictionary<string, object>();
