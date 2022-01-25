@@ -2,7 +2,7 @@
 <CreateModuleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Resources NoComponents="true">
     <CoreServicesDlls>
-      <string>.\Decisions.Plaid\obj\Debug\net5.0\win-x64\Decisions.Plaid.dll</string>
+      <string>.\Decisions.Plaid\obj\Debug\net6.0\win-x64\Decisions.Plaid.dll</string>
     </CoreServicesDlls>
     <CliDlls/>
     <WebPages/>
@@ -15,6 +15,6 @@
     </ObjectsToImport>
     <MsSqlScript/>
   </Resources>
-  <Version/>
+  <Version>7.10</Version>
   <Description>This module includes steps and objects generated from Plaid OpenApi 2020-9-14.yml</Description>
 </CreateModuleInfo>
