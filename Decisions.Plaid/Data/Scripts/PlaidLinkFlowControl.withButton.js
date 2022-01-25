@@ -38,7 +38,14 @@ PlaidLinkFlowControl.prototype.setValue = function (data) {
       receivedRedirectUri: null
     });
 
-    handler.open();
+    
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = 'Click me';
+    button.onclick = function(e){
+      handler.open();
+    }
+    this.host[0].appendChild(button);
   }
   }, 500);
 };

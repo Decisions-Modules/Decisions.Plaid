@@ -22,7 +22,6 @@ PlaidLinkFlowControl.prototype.resize = function (height, width) {
 };
 
 PlaidLinkFlowControl.prototype.setValue = function (data) {
-  setTimeout(() => {
   if (data && JSON.stringify(data) !== JSON.stringify(this.lastConsumed)) {
     this.lastConsumed = data;
     this.linkToken = data.LinkToken;
@@ -33,14 +32,13 @@ PlaidLinkFlowControl.prototype.setValue = function (data) {
         this.publicToken = public_token;
       },
       onLoad: () => {},
-      onExit: (err, metadata) => {},
+      onExit: (err, metadata) => { console.debug(err); },
       onEvent: (eventName, metadata) => {},
       receivedRedirectUri: null
     });
 
     handler.open();
   }
-  }, 500);
 };
 
 PlaidLinkFlowControl.prototype.getValue = function () {
