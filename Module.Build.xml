@@ -15,6 +15,7 @@
     </ObjectsToImport>
     <MsSqlScript/>
   </Resources>
+  <ImagePath>./image.png</ImagePath>
   <Version>7.10</Version>
   <Description>This module includes steps and objects generated from Plaid OpenApi 2020-9-14.yml</Description>
 </CreateModuleInfo>
