@@ -1,0 +1,21 @@
+{
+    "Resources": {
+	  "NoComponents": true,
+      "CoreServicesDlls": [
+		"./Decisions.Plaid/obj/Decisions.Plaid.dll"
+	  ],
+      "CliDlls": null,
+      "WebPages": null,
+      "SilverlightDlls": null,
+      "AgentDlls": null,
+      "InstallScript": null,
+      "SqlScripts": null,
+      "ObjectsToImport": [
+		"./Decisions.Plaid/ImportedObjects/**/*.*"
+	  ],
+      "MsSqlScript": null
+    },
+    "ImagePath": "./image.png",
+    "Version": "8.15.0",
+    "Description": "This module includes steps and objects generated from Plaid OpenApi 2020-9-14.yml"
+ }
