@@ -16,6 +16,6 @@
       "MsSqlScript": null
     },
     "ImagePath": "./image.png",
-    "Version": "9.0.0",
+    "Version": "9.21",
     "Description": "This module includes steps and objects generated from Plaid OpenApi 2020-9-14.yml"
  }
