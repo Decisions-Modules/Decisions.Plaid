@@ -1,4 +1,4 @@
-{
+﻿{
     "Resources": {
 	  "NoComponents": true,
       "CoreServicesDlls": [
@@ -16,6 +16,6 @@
       "MsSqlScript": null
     },
     "ImagePath": "./image.png",
-    "Version": "9.21",
+    "Version": "10.0.0",
     "Description": "This module includes steps and objects generated from Plaid OpenApi 2020-9-14.yml"
  }
